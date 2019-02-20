@@ -1,0 +1,14 @@
+[data-scroll] {
+    transition: all 2s;
+  }
+  [data-scroll="in"] {
+    opacity: 1;
+    transform:translateX(0);
+    transform:  translateY(-95px)
+  }
+  [data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+ 
+ 

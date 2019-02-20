@@ -1,0 +1,116 @@
+/* RGB */
+$accents: rgba(133, 60, 131, 1);
+$body: rgba(252, 251, 255, 1);
+$not: rgba(254, 215, 102, 1);
+$text: rgba(42, 45, 46, 1);
+$buttons: rgba(147, 129, 255, 1);
+
+// BUTTONS AND FORMS 
+.buttn-default {
+  display: block;
+  color: white;
+  background-color: $buttons;
+  border-radius: 20em;
+  height: 40px;
+  width: 150px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttn-default:hover,
+.buttn-default:focus {
+  background-color: darken($color: $buttons, $amount: 10%);
+}
+
+.buttn-large {
+  display: block;
+  color: white;
+  background-color: $buttons;
+  border-radius: 20em;
+  font-size: 1.5em;
+  height: 60px;
+  width: 230px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttn-large:hover,
+.buttn-large:focus {
+  background-color: darken($color: $buttons, $amount: 10%);
+  text-decoration: none;
+}
+
+
+
+.buttn-small {
+  display: inline-block;
+  color: white;
+  background-color: #1c77c3;
+  border-radius: 20em;
+  height: 40px;
+  width: 130px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttn-small:hover,
+.buttn-small:focus {
+  background-color: darken($color: #1c77c3, $amount: 10%);
+  text-decoration: none;
+}
+
+// forms
+.contact {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.form {
+  width: fit-content;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+}
+
+input[type=text],
+input[type=email] {
+  border: 1px solid $accents;
+  background: #F8F8F8;
+  display: block;
+  height: 5vh;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 1em;
+  width: 40vw;
+}
+
+input[type=submit] {
+  margin-top: 2em;
+}
+
+.input-text-large {
+  height: 300px !important;
+}
+.landing-btn {
+  a{
+  text-decoration: none;
+  }
+}
+
+@media (max-width:850px) {
+
+  input[type=text],
+  input[type=email] {
+    width: 80vw;
+  }
+
+  input[type=submit] {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
