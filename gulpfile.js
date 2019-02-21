@@ -53,7 +53,7 @@ function watch() {
     // We should tell gulp which files to watch to trigger the reload
     // This can be html or whatever you're using to develop your website
     // Note -- you can obviously add the path to the Paths object
-    gulp.watch("./*.html", reload);
+    gulp.watch("./index.html", reload);
     gulp.watch("./style.css", reload);
 	
 }

@@ -7,7 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Darien Miles/Portflio</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous"></script>
+              <script src="./js/script.js"></script>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- <script src="./bootstrap.min.js"></script> -->
     <style>
@@ -15,6 +21,9 @@
 </head>
 
 <body>
+        <div id="loading">
+            <h1 class="display-1">Please wait...</h1>
+              </div>
     <nav role='navigation'>
         <div id="menuToggle">
             <input type="checkbox" />
@@ -29,29 +38,31 @@
             </ul>
         </div>
     </nav>
-        <div class="jumbotron container">
+        <div class="jumbotron container parallax-head">
             <h1 class="display-1 english overline">Darien Miles designer//developer</h1>
         </div>
     <div class="about container">
         <section class="content-row content-reverse row-2" id="about">
+            <div class="left-image-mob parallax-image"></div>
             <div class="left-image"></div>
-            <div class="text-right">
+            <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300" class="text-right">
                 <h2 class="overline">My name is Darien Miles</h2>
-                <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut modi, cupiditate quos iste odit non, nihil unde ipsam ratione quaerat illum ipsa ducimus? Maxime laudantium ea doloremque cupiditate animi praesentium molestias quod placeat dicta. Atque illo voluptatibus fugit similique placeat officiis ducimus provident error laudantium, sequi esse reprehenderit animi dolorum assumenda, accusantium odio veniam maxime unde rem iste veritatis id nulla. Eius placeat iste explicabo accusantium neque porro expedita rerum nesciunt repudiandae et dicta minima exercitationem officiis delectus, voluptatibus nemo debitis voluptate soluta, facere, dolor dolorem temporibus ullam est? Repudiandae minus officia consequatur nam excepturi eligendi pariatur autem ipsam tenetur.</div>
+                <p>始めまして、フロントエンドディベロッパー/デザイナー（24歳）の、オーストラリアから来たダリエンです。今HAL東京の情報処理学科で勉強しています。趣味はベープ、BMXとコーヒーを飲むことです。
+                        ウェブ技術などは2013、学校でのマルチメディアコースで勉強しはじめました。</p>
             </div>
         </section>
     </div>
     <div class="container skills">
     <section class="skills-inner content row 5" id="skills">
         <h1 class="display-1 overline text-center">Skills</h1>
-       <div class="card-box">
+       <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300"  class="card-box">
         <div class="tab-prog">
             <h3>Web</h3>
             <ul>
                 <li>HTML</li>
-                <li>CSS</li>
                 <li>SCSS</li>
-                <li>JavaScript(vanilla)</li>
+                <li>gulp.js</li>
+                <li>jQuery(basic)</li>
             </ul>
         </div>
         <div class="tab-tool">
@@ -63,42 +74,36 @@
                 <li>gulp.js</li>
         </div>
         <div class="tab-skill">
-            <h3>Others <span></span>(IT related)</h3>
+            <h3>Others <span></span>(Other stuff ive learnt)</h3>
             <ul>
-                <li>Java</li>
+                <li>java</li>
                 <li>C#</li>
                 <li>Visual Basic</li>
                 <li>SQL</li>
         </div>
     </div>
-        <div class="skill-detailed">
-            <p>Over the years, I have picked up a few programming languages and experience with tools. During my
-                schooling years I learnt C# and recently JAVA and SQL for school projects. Although I wouldn't say I'm
-                fluent in them I feel confident in my ability to write code in them. I have also played around with
-                Ruby while playing around with Ruby on Rails for an internship.
-
-                I started learning web related skills around 2013/2014 during a multimedia course I took at school. It
-                gave me a strong understanding of CSS and HTML basics which gave me a head start this year when I
-                realized I had a knack for development. I started properly studying web development in May of 2018
-                where I started learning vanilla JavaScript, SCSS and smaller libraries for my web projects for school.
-                I learnt most of my skills I have acquired from watching YouTube tutorials, FreeCodeCamp, W3 Schools
-                (it's not that bad) and asking teachers at my school for help.
-            </p>
+        <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500"  class="skill-detailed">
+            <p>希望職種はフロントエンドエンジニアです。
+                    興味があるものはUI/UXデザインとWordpressテーマを開発する事です。
+                    今まだバックエンドやJavaScriptの技術はあまり経験はないですが、今年は勉強して使いこなせるようになるのが目標です。
+                    将来的には、Vue.jsやRuby on railsのフレームワークを使いこなしてフロントエンドもバックエンドも開発できるようになりたいです。</p>
         </div>
         <div class="projects" id="projects">
             <h1 class="display-1 overline text-center">Projects</h1>
-            <div class="card-box">
+            <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150" class="card-box">
                 <div class="tab-1">
                     <h3>Perflex-Designs</h3>
                     <img src="./assets/images/perflex.jpg" alt="" class="project-image">
-                    <p>a dynamic template service <br>
-                        <a href="https://perflex-designs.netlify.com" target="_blank">Check out my project here</a></p>
+                    <p>学校での就職プレゼンテーションのため、パフレックスデザインを開発しました、　
+                            メインコンセプトはダイナミックテンプレートフレームワーク。
+                            今年目的はこのフレームワークを開発するよていです。<br>
+                        </p><a class="overline" href="https://perflex-designs.netlify.com" target="_blank">Check out my project here</a>
                 </div>
                 <div class="tab-2">
                     <h3>Gillies Portfolio</h3>
                     <img class="project-image" src="./assets/images/gillies-portfolio.jpg" alt="">
-                    <p>A portfolio I made for a music student at my school <br>
-                    <a href="https://gillies-portfolio.netlify.com"target="_blank">Check out my project here</a></p>
+                    <p>HAL東京のミュージック学科の学生のポートフォリオ。<br>
+                    </p><a class="overline" href="https://gillies-portfolio.netlify.com"target="_blank">Check out my project here</a>
                 </div>
             </div>
         </div>
@@ -106,11 +111,11 @@
 </div>
     <section class="container contact">
         <h1 class="display-1 overline text-center">Contact me</h1>
-        <form class="form" action="">
-            <input type="text" name="fullname" id="fullname" placeholder="Your Name">
-            <input type="email" name="email" id="email"placeholder="Your email">
-            <input type="text" name="company" id="company" placeholder="Your Company">
-            <textarea name="inquiry" id="inquiry"  cols="30" rows="10"></textarea>
+        <form class="form" action="" data-netlify="true">
+            <input type="text" value="fullname" id="fullname" placeholder="Your Name">
+            <input type="email" value="email" id="email"placeholder="Your email">
+            <input type="text" value="company" id="company" placeholder="Your Company">
+            <textarea value="inquiry" id="inquiry"  cols="30" rows="10" placeholder="Your inquiry"></textarea>
             <input type="submit" class="buttn-default" value="Send">
         </form>
     </section>
@@ -131,19 +136,28 @@
                     就職指導室まで</ul>
                 <ul>shushoku@tokyo.hal.ac.jp</ul>
             </li>
-            <div class="social">
+        </div>
+        <div class="social">
                 <a href="https://github.com/MilesDarien" target="_blank" rel="noopener noreferrer"> <i class="fab fa-github-square"></i></a>
                 <a href="https://codepen.io/milesdarien/" target="_blank" rel="noopener noreferrer"> <i class="fab fa-codepen"></i></a>
                 <a href="https://www.netlify.com">
-            </div>
-            <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg"/>
-        </a>
-
-        </div>
+                    <br><img src="https://www.netlify.com/img/global/badges/netlify-dark.svg"/>
+                </a>
+                </div>
+            
         <div class="legal">
             <p class="small">&copy; Darien Miles (Perflex Designs) 2018</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+            AOS.init({
+                disable:'mobile'
+            });
+    </script>
+    <script language="javascript" type="text/javascript">
+    window.onload = function(){ document.getElementById("loading").style.display = "none" }
+   </script>
 </body>
 
 </html>
