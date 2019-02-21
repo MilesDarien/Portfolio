@@ -17,8 +17,24 @@ html{
     .display-2{
         font-size: 2.5em;
     }
+
+    @media (max-width:760px){
+        .display-1{
+            font-size: 2em;
+        }
+        .display-2{
+            font-size: 1.5em;
+        }
+    }
     .overline {
         text-decoration: overline $accents;
+    }
+    .overline-div {
+        border-top: 1px solid $accents;
+    }
+
+    .text-center {
+        text-align: center;
     }
     ul, li {
         list-style-type: none;

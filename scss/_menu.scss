@@ -1,20 +1,20 @@
 //NAVIGATION SETTINGS HERE
 a {
     text-decoration: none;
-    color: #a6a6a6;
+    color: $text;
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
   }
   
   a:hover {
-    color: white;
+    color: lighten($color: $text, $amount: 50%);
   }
   
   #menuToggle {
     display: block;
     position: fixed;
-    top: 50px;
-    right: 50px;
+    top: 30px;
+    right: 30px;
     z-index: 1;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -27,8 +27,8 @@ a {
     width: 40px;
     height: 32px;
     position: fixed;
-    top: 50px;
-    right: 50px;
+    top: 30px;
+    right: 30px;
     cursor: pointer;
     opacity: 0;
     z-index: 2;
@@ -44,7 +44,7 @@ a {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: #646262;
+    background: $text;
     border-radius: 3px;
     z-index: 1;
     -webkit-transform-origin: 4px 0px;
@@ -73,7 +73,7 @@ a {
     opacity: 1;
     -webkit-transform: rotate(45deg) translate(-2px, -1px);
             transform: rotate(45deg) translate(-2px, -1px);
-    background: #727272;
+    background: $not;
   }
   
   /*
@@ -102,14 +102,15 @@ a {
     text-align: left;
     overflow: hidden;
     position: fixed;
-    width: 30vw;
-    height: 100vh;
-    margin: -100px 0 0 0;
+    width: 20vw;
+    height: max-content;
+    margin: -200px 0 0 0;
     padding: 50px;
     padding-top: 125px;
-    right: -200px;
-    background: #3d3d3d;
+    right: -100px;
+    background: $body;
     list-style-type: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
     -webkit-transform-origin: 0% 0%;
@@ -127,10 +128,10 @@ a {
       text-align: center;
       position: fixed;
       width: 100vw;
-      height: 80vh;
-      right: -100px;
-      padding-top: 0;
-      background: #ededed;
+      height: max-content;
+      right: -50px;
+      
+      background: $body;
       list-style-type: none;
       -webkit-font-smoothing: antialiased;
       /* to stop flickering of text in safari */
@@ -152,7 +153,7 @@ a {
   #menu li {
     margin-top: 2em;
     padding: 10px 0;
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
   
   /*

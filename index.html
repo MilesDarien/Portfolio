@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Darien Miles/Portflio</title>
-    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- <script src="./bootstrap.min.js"></script> -->
     <style>
     </style>
@@ -21,10 +22,10 @@
             <span></span>
             <span></span>
             <ul id="menu">
-                <li><a href="#">about</a></li>
-                <li><a href="#">skills</a></li>
-                <li><a href="#">projects</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </div>
     </nav>
@@ -32,27 +33,18 @@
             <h1 class="display-1 english overline">Darien Miles designer//developer</h1>
         </div>
     <div class="about container">
-        <section class="content content-reverse row-2" id="about">
-            <div class="left-image">
-                
-            </div>
+        <section class="content-row content-reverse row-2" id="about">
+            <div class="left-image"></div>
             <div class="text-right">
                 <h2 class="overline">My name is Darien Miles</h2>
-                <p>始 めまして、ダリエンです。日本には約4年近く住んでいます。私はWell motivated, passionate and have somewhat decent communication
-                    skills.
-                    子供の頃から情報処理と関わる機会が多かったです。例えばゲーム、PC組立など、勉強やプログラミングでもつも何か関係はあります。
-                    <span></span>
-                    <br>
-                    プログラミングとマルチメディアは学校で勉強してたんですけど、作品を作ったり仕事で使うほうが勉強しやすくてもっと勉強と経験になりました。
-                    マルチメディア勉強したときに始めてWebデザインとデベロップメント関係の興味出会いました。特に技術はめっちゃ得意のわけではないが楽しんでやっています。
-                    <span></span>
-                    <br>
-                    最近またHAL東京で情報処理の勉強し始めて、またWeb開発に興味は築きました。将来にデザイン・フロントエンドエンジニア関係の仕事したいです。</p>
+                <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut modi, cupiditate quos iste odit non, nihil unde ipsam ratione quaerat illum ipsa ducimus? Maxime laudantium ea doloremque cupiditate animi praesentium molestias quod placeat dicta. Atque illo voluptatibus fugit similique placeat officiis ducimus provident error laudantium, sequi esse reprehenderit animi dolorum assumenda, accusantium odio veniam maxime unde rem iste veritatis id nulla. Eius placeat iste explicabo accusantium neque porro expedita rerum nesciunt repudiandae et dicta minima exercitationem officiis delectus, voluptatibus nemo debitis voluptate soluta, facere, dolor dolorem temporibus ullam est? Repudiandae minus officia consequatur nam excepturi eligendi pariatur autem ipsam tenetur.</div>
             </div>
         </section>
     </div>
     <div class="container skills">
     <section class="skills-inner content row 5" id="skills">
+        <h1 class="display-1 overline text-center">Skills</h1>
+       <div class="card-box">
         <div class="tab-prog">
             <h3>Web</h3>
             <ul>
@@ -78,6 +70,7 @@
                 <li>Visual Basic</li>
                 <li>SQL</li>
         </div>
+    </div>
         <div class="skill-detailed">
             <p>Over the years, I have picked up a few programming languages and experience with tools. During my
                 schooling years I learnt C# and recently JAVA and SQL for school projects. Although I wouldn't say I'm
@@ -92,42 +85,60 @@
                 (it's not that bad) and asking teachers at my school for help.
             </p>
         </div>
-        <div class="projects">
-            <h1 class="display-2">Projects</h1>
+        <div class="projects" id="projects">
+            <h1 class="display-1 overline text-center">Projects</h1>
+            <div class="card-box">
+                <div class="tab-1">
+                    <h3>Perflex-Designs</h3>
+                    <img src="./assets/images/perflex.jpg" alt="" class="project-image">
+                    <p>a dynamic template service <br>
+                        <a href="https://perflex-designs.netlify.com" target="_blank">Check out my project here</a></p>
+                </div>
+                <div class="tab-2">
+                    <h3>Gillies Portfolio</h3>
+                    <img class="project-image" src="./assets/images/gillies-portfolio.jpg" alt="">
+                    <p>A portfolio I made for a music student at my school <br>
+                    <a href="https://gillies-portfolio.netlify.com"target="_blank">Check out my project here</a></p>
+                </div>
+            </div>
         </div>
     </section>
 </div>
     <section class="container contact">
+        <h1 class="display-1 overline text-center">Contact me</h1>
         <form class="form" action="">
             <input type="text" name="fullname" id="fullname" placeholder="Your Name">
             <input type="email" name="email" id="email"placeholder="Your email">
             <input type="text" name="company" id="company" placeholder="Your Company">
-            <input type="text" name="Inquiry" id="inquiry" placeholder="" class="input-text-large">
+            <textarea name="inquiry" id="inquiry"  cols="30" rows="10"></textarea>
             <input type="submit" class="buttn-default" value="Send">
         </form>
     </section>
-</div>
     <footer>
         <div class="foot-nav">
             <h3>Links</h3>
             <li>
-                <ul><a href="#">About</a> </ul>
-                <ul><a href="#">Contact</a> </ul>
-                <ul><a href="#">How to use</a> </ul>
-            <li><a href="index.html">Home</a></li>
+                <ul><a href="#top">Top</a> </ul>
+                <ul><a href="#about">About</a> </ul>
+                <ul><a href="#skills">Skills</a> </ul>
+            <li><a href="#projects">Projects</a></li>
             </li>
         </div>
         <div class="contact-details">
             <h3>Contact Details</h3>
             <li>
-                <ul>e-mail: darien.miles@gmail.com</ul>
-                <ul>phone: 07010060365</ul>
+                <ul>お問合せ：<br>
+                    就職指導室まで</ul>
+                <ul>shushoku@tokyo.hal.ac.jp</ul>
             </li>
             <div class="social">
-                <i class="fab fa-github-square"></i>
-                <i class="fab fa-twitter-square"></i>
-                <i class="fas fa-coffee"></i>
+                <a href="https://github.com/MilesDarien" target="_blank" rel="noopener noreferrer"> <i class="fab fa-github-square"></i></a>
+                <a href="https://codepen.io/milesdarien/" target="_blank" rel="noopener noreferrer"> <i class="fab fa-codepen"></i></a>
+                <a href="https://www.netlify.com">
             </div>
+            <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg"/>
+        </a>
+
         </div>
         <div class="legal">
             <p class="small">&copy; Darien Miles (Perflex Designs) 2018</p>
