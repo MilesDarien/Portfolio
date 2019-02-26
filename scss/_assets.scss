@@ -19,7 +19,8 @@ $buttons: rgba(147, 129, 255, 1);
   transition: 0.2s;
   opacity: 0.8;
   color: $accents;
-  background-color: $text;
+  background-color: white;
+  transition: 0.5s;
   z-index: 99;
   text-align: center;
 }
