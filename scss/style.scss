@@ -339,7 +339,8 @@ background: $body;
     margin-top: 20vh;
   } 
   .card-box {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     .tab-prog, .tab-tool, .tab-skill{
@@ -369,8 +370,10 @@ background: $body;
   .tab-1, .tab-2{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     max-width: 500px;
+    margin-left:.5em;
+    margin-right:.5em;
     display: flex;
-    margin: 0 auto;
+    // margin: 0 auto;
     flex-direction: column;
     text-align: left;
     border: 1px solid $accents;
