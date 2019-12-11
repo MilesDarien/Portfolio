@@ -11,4 +11,15 @@
     transform: translateX(-200px);
   }
  
+
+  @keyframes loading {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
  
+  

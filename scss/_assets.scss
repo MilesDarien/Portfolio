@@ -23,6 +23,7 @@ $buttons: rgba(147, 129, 255, 1);
   transition: 0.5s;
   z-index: 99;
   text-align: center;
+  transition: opacity 1s;
 }
 // BUTTONS AND FORMS 
 .buttn-default {
@@ -167,6 +168,7 @@ img.project-image {
 
 // footer
 footer {
+  box-sizing: border-box;
   background: $not;
   color: $text;
   text-align: center;
